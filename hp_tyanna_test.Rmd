@@ -21,9 +21,12 @@ hpgraph = hpdata %>%
   filter(Name == "Harry" | Name == "Draco Malfoy") %>% # | --> OR for wanted rows
   select(Name, book, agg.per.mention) %>% # selecting wanted colmns
   ggplot(aes(x = book, y = agg.per.mention)) +
-  geom_col(aes(fill = Name), position = "dodge") # position = "dodge" --> cluster colm 
+  geom_col(aes(fill = Name), position = "dodge") + # position = "dodge" --> cluster colm 
+  coord_flip() +
+  theme_classic()
 
 hpgraph
   
 ```
 
+Hello! So We basiclaly just made a graph and now we're told to write anything.. :O 
