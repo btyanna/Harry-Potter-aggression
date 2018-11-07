@@ -1,0 +1,17 @@
+---
+title: "Harry Potter Lab 6"
+author: "Tyanna Bui"
+date: "11/7/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+1. Loading packages and data
+```{r, include = F}
+library(tidyverse)
+hpdata = read_csv("harry_potter_aggression_full.csv")
+```
+
